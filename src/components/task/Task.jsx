@@ -28,7 +28,6 @@ export function Task(props) {
     id,
   } = props;
 
-  console.log(props);
   let formattedDate = dueDate.toLocaleDateString("en-GB", {
     day: "numeric",
     month: "short",
@@ -43,8 +42,6 @@ export function Task(props) {
 
   function handleProgessChange(value) {
     setProgress(value);
-
-    console.log("ID being sent:", id);
 
     mutate({ _id: id, status: value ? "inProgress" : "todo" });
   }

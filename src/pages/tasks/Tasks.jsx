@@ -88,7 +88,7 @@ function Tasks() {
             {data &&
               data.data.map((task) => (
                 <Task
-                  key={task.id}
+                  key={task._id}
                   title={task.title}
                   priority={task.priority}
                   status={task.status}

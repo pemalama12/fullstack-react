@@ -30,7 +30,6 @@ function TaskPagination() {
       setMeta(tasks.pagination.meta);
     }
   }, [tasks]);
-  console.log("from pagination", tasks);
 
   return (
     <Pagination>

@@ -40,7 +40,7 @@ function OrderSelect() {
       navigate(`tasks?order=${currentOrder}`);
     }
   }, [currentOrder]);
-  console.log(order);
+
   return (
     <Select
       value={currentOrder ?? order}
